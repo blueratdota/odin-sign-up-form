@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+:root{
+    --text: #eee8e8;
+    --background: #212121;
+    --primary: #cba5a5;
+    --secondary: #753b3b;
+    --accent: #b96060;
+}
+
+body{
+    height: 100vh;
+}
+
+main{
+    display: flex;
+}
+
+.left-photo{
+    background-image: url(./assets/left-photo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 35vw;
+    height: 100vh;
+}
+.form-body{
+    width: 65vw;
+    color: var(--text);
+    background-color: var(--background);
+}
