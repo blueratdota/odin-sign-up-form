@@ -33,6 +33,27 @@ main{
     height: 100vh;
 }
 
+.logo-container{
+    background-color: #753b3b9c;
+    /* text-align: center; */
+    height: 300px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--text);
+    gap: 30px;
+
+}
+
+#odin-photo{
+    margin: 30px 0 30px 0;
+    height: 240px;
+    flex-grow: 0;
+}
+
+
 .form-main{
     width: 65vw;
     color: var(--text);
@@ -71,7 +92,7 @@ main{
     flex-grow: 1;
     min-width: 350px;
     max-width: 400px;
-    /* margin-right: 60px; */
+    margin-right: 60px;
 } 
 
 .redirect-login{
