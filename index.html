@@ -19,7 +19,7 @@
 
         <div class="form-main">
             <div class="top-text">
-                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam reiciendis consequuntur cum dignissimos culpa atque magnam fugit, temporibus nihil eos.
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
                 </p>
                 <p>Sign up <em>now</em> to get started.</p>
                 <p class="spacer-text">You <em>know</em> you want to</p>
@@ -32,39 +32,35 @@
 
                     <div class="input">
                         <label for="first_name">FIRST NAME</label>
-                        <input type="text" id="first_name" name="first_name" placeholder="Enzo">
+                        <input type="text" id="first_name" name="first_name" placeholder="Enzo" maxlength="30" required>
                     </div>
                     <div class="input">
                         <label for="last_name">LAST NAME</label>
-                        <input type="text" id="last_name" name="last_name" placeholder="Ferrari">
+                        <input type="text" id="last_name" name="last_name" placeholder="Ferrari" maxlength="30" required>
                     </div>
                     <div class="input">
                         <label for="user_email">EMAIL</label>
-                        <input type="email" id="user_email" name="email" placeholder="you@example.com">
+                        <input type="email" id="user_email" name="email" placeholder="you@example.com" required>
                     </div>
                     <div class="input">
                         <label for="phone-number">PHONE NUMBER</label>
-                        <input type="number" id="phone-number" name="phone-number" placeholder="+639xxxxxxxxx">
+                        <input type="number" id="phone-number" name="phone-number" placeholder="+639xxxxxxxxx" required>
                     </div>
                     <div class="input">
                         <label for="user_password-1">PASSWORD</label>
-                        <input type="password" id="user_password-1" name="password-1">
+                        <input type="password" id="user_password-1" name="password-1" minlength="8" maxlength="20" required>
                     </div>
                     <div class="input">
                         <label for="user_password-2"> CONFIRM PASSWORD</label>
-                        <input type="password" id="user_password-2" name="passworD-2">
-                    </div>
+                        <input type="password" id="user_password-2" name="passworD-2" minlength="8" maxlength="20" required>
+                    </div>     
                 </div>
+                <div><p id="create-status"></p></div>
+                <button id="create-account" type="submit">Create Account</button>
                 
             </form>
 
-            <!-- TO DO!!!
-            --STYLE THE FORM BODY AREA
-            --STYLE THE INPUT BOX -->
-
-
             <div class="redirect-login">Already have an account? <span><a href="#">Log in</a></span></div>
-
 
         </div>
 

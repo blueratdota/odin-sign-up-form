@@ -71,19 +71,21 @@ main{
     font-size: 1.3rem;
 }
 .spacer-text{
-    margin: 4rem 0 4rem 0;
+    margin: 4rem 0 2rem 0;
 }
 
 .form-body{
     display: flex;
     flex-wrap: wrap;
     padding-left: 60px;
-    border: 1px red solid;
+    padding-bottom: 30px;
+    /* border: 1px red solid; */
     /* max-width: 900px; */
     gap: 40px;
     
 }
 .form-title{
+    font-size: 1.2rem;
     width: 100%;
 }
 .input{
@@ -94,9 +96,63 @@ main{
     max-width: 400px;
     margin-right: 60px;
 } 
+input{
+    background-color: var(--background);
+    border: 1px solid rgb(77, 77, 77);
+    padding: 2px;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: var(--text);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input:focus:invalid{
+    border: 2px solid red;
+}
+input:valid{
+    border: 1px solid rgb(132, 255, 115);
+}
+input:focus {
+    border: 2px solid var(--accent);
+}
+
+.invalid-box{
+    border: 2px solid red;
+}
+
+#create-status{
+    padding-left: 60px;
+}
+
+#create-account{
+    margin-top: 30px;
+    margin-left: 60px;
+    width: 300px;
+    height: 50px;
+    font-size: 1.2rem;
+    background-color: var(--background);
+    color: var(--text);
+    border-radius: 5px;
+    border: 3px solid var(--accent);
+}
+
+#create-account:hover{
+    background-color:var(--accent);
+    color: var(--background);
+}
 
 .redirect-login{
-    margin-top: 4rem;
+    padding-left: 60px;
+    margin: 4rem 0 4rem 0;
+    
+}
+
+.redirect-login a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--accent);
 }
 
 
